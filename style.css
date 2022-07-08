@@ -1,0 +1,42 @@
+:root{
+    --AzulOscuro: #1F4690;
+    --Azul: #3A5BA0;
+    --AmarilloQ: #FFA500;
+    --Piel: #FFE5B4;
+}
+
+
+body {
+  background-color:var(--AzulOscuro);
+  background-image: url("/M3U2TrelloAppDanielHernandez/img/FondoApp1.jpg");
+  color: var(--colorAzul);
+}
+
+.container{
+    text-align: center;
+	display: grid;
+    /*flex-wrap: wrap;*/
+}
+
+.columnas{
+    padding: 2rem;
+    columns: 3;
+}
+
+h1{
+    color: var(--Azul);
+}
+
+.tituloPagina{
+    text-align: center;
+    color: azure;
+    
+   
+    align-items: center;
+}
+
+.CuadroTareas{
+    background-color:var(--Piel);
+    width: 80%;
+    height: 40rem;
+}
