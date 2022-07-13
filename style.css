@@ -5,38 +5,53 @@
     --Piel: #FFE5B4;
 }
 
-
-body {
-  background-color:var(--AzulOscuro);
-  background-image: url("/M3U2TrelloAppDanielHernandez/img/FondoApp1.jpg");
-  color: var(--colorAzul);
+header{
+    background-color: var(--AmarilloQ);
+    text-align: center;
+    padding-top:0;
+    padding-bottom: 1rem;
+    margin-top: 0;
 }
 
-.container{
+body {
+    background-image: url("/img/FondoApp1.jpg");
+    background-color:var(--AzulOscuro);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.tituloPagina{
     text-align: center;
-	display: grid;
-    /*flex-wrap: wrap;*/
+    color: var(--AzulOscuro);
+    align-items: center;
+}
+
+
+.CuadroTitulo{
+    border-radius: 20px;
 }
 
 .columnas{
-    padding: 2rem;
-    columns: 3;
+    padding: 1rem;
+    text-align: center;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px
+
+}
+
+.CuadroTareas{
+    background-color:var(--Piel);
+    /*width: 30%;*/
+    height: 30rem;
+    border: var(--AmarilloQ) 4px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 h1{
     color: var(--Azul);
 }
 
-.tituloPagina{
-    text-align: center;
-    color: azure;
-    
-   
-    align-items: center;
-}
 
-.CuadroTareas{
-    background-color:var(--Piel);
-    width: 80%;
-    height: 40rem;
-}
