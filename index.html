@@ -12,15 +12,15 @@
     <!--Encabezado de Pagina-->
     <header class="Encabezado-App">
         <section class="CuadroTitulo">
-            <h1 class="tituloPagina">Proyectos KANBAN</h1>
-            <div>
-                <button class="verForm">Cargar tarea</button>
+            <h1 class="tituloPagina">Control Tareas KANBAN</h1>
+            <div class="form-group form-button">
+                <input type="button" id="verForm" class="form-submit" value="Cargar Tarea" onclick="mostrar();"/>
             </div>
         </section>
     </header>
     <!--Final Encabezado de Pagina-->
 
-    <!--Cuero de la APP-->
+    <!--Cuerpo de la APP-->
     <main class="container">
         <div class="columnas">
             <!--Columna Por Hacer-->
@@ -46,50 +46,42 @@
           
         </div>
 
-        <section class="seccionForm">
+        <div class="seccionForm" id="seccionForm" style="display: none;">
             <div class="signup-form">
                 <h2 class="form-title">Agregar Tarea</h2>
                 <form method="POST" class="register-form" id="register-form">
                     <div class="form-group">
-                        <label for="titulo"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <label for="titulo"><i class="material-icons-name"></i></label>
                         <input type="text" name="titulo" id="titulo" placeholder="Titulo de la Tarea"/>
                     </div>
-                    <!--<div class="form-group">
-                        <label for="email"><i class="zmdi zmdi-email"></i></label>
-                        <input type="email" name="email" id="email" placeholder="Your Email"/>
-                    
+
                     <div class="form-group">
-                        <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                        <input type="password" name="pass" id="pass" placeholder="Password"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                        <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
-                    </div> </div>-->
-                    <div class="form-group">
-                        <label for="Descripcion"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <label for="Descripcion"><i class="material-icons-name"></i></label>
                         <input type="text" name="Descripcion" id="Descripcion" placeholder="Descripcion de la Tarea"/>
                     </div>
                     <div class="form-group">
-                        <label for="Responsable"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <label for="Responsable"><i class="material-icons-name"></i></label>
                         <input type="name" name="Responsable" id="Responsable" placeholder="Responsable de la Tarea"/>
                     </div>
 
                     <div class="form-group">
-                        <label for="FechaEn"><i class="zmdi zmdi-account material-icons-name"></i>Fecha de Entrega</label>
+                        <label for="FechaEn"><i class="material-icons-name"></i>Fecha de Entrega</label>
                         <input type="date" name="FechaEn" id="FechaEn" />
                     </div>
 
                     <div class="form-group form-button">
                         <input type="submit" name="signup" id="signup" class="form-submit" value="Registrar Tarea"/>
                     </div>
+
+                    <a href="javascript:void(0);" onclick="ocultar();"><h4>Ocultar</h4></a>
                 </form>
+                <div class="form-image">
+                    <figure><img src="/img/signup-image.jpg" alt="sing up image"></figure>
+                </div>
             </div>
-            <div class="form-image">
-                <figure><img src="/img/signup-image.jpg" alt="sing up image"></figure>
-                
-            </div>
-        </section>
+            
+        </div>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
