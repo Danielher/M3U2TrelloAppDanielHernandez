@@ -266,14 +266,10 @@ h1{
       input:focus:-ms-input-placeholder {
         color: #222; }
       input:focus:-moz-placeholder {
-        color: #222; }
- 
-  
+        color: #222; }  
    
   .material-icons-name {
-    font-size: 18px; }
-
-    
+    font-size: 18px; }    
    
   .signin-form {
     margin-right: 90px;
