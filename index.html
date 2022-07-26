@@ -24,21 +24,21 @@
     <main class="container">
         <div class="columnas">
             <!--Columna Por Hacer-->
-            <section class="CuadroTareas">
+            <section class="CuadroTareas" id="todoTasks">
                 <h2>Tarea por Hacer</h2>
                 <div></div>
             </section>
             <!--Fin Columna Por Hacer-->
 
             <!--Columna En progreso-->
-            <section class="CuadroTareas">
+            <section class="CuadroTareas" id="progressTasks">
                 <h2>Tarea en Proceso</h2>
                 <div></div>
             </section>
             <!--Fin Columna En progreso-->
 
             <!--Columna Finalizado-->
-            <section class="CuadroTareas">
+            <section class="CuadroTareas" id="doneTasks">
                 <h2>Tarea Finalizada</h2>
                 <div></div>
             </section>
@@ -82,6 +82,11 @@
             
         </div>
     </main>
+    <!-- Recursos externos -->
+    <script src="js/libraries/axios.js"></script>
+
+    <!-- Recursos internos -->
     <script src="index.js"></script>
+    <script src="js/api/requests.js"></script>
 </body>
 </html>
