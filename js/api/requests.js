@@ -44,15 +44,11 @@ const createTask = (task) => {
   //le pasamos la clase card-task__date
   taskDate.classList.add("card-task__date");
   // Le añadimos la fecha que traemos desde la API utilizando los template string
-  taskDate.innerHTML = `<span class="card-task__date--tag-date">Plazo:</span> ${dateFormat(
-    task.deadline
-  )}`;
+  taskDate.innerHTML = `<span class="card-task__date--tag-date">Plazo:</span> ${task.deadline}`;
 
   let taskCreate = document.createElement("p")
   taskCreate.classList.add("card-task__date")
-  taskCreate.innerHTML = `<span class="card-task__date--tag-date">Creación:</span> ${dateFormat(
-    task.created
-  )}`;
+  taskCreate.innerHTML = `<span class="card-task__date--tag-date">Creación:</span> ${task.created}`;
   
   newTask.appendChild(taskTitle);
   newTask.appendChild(taskResponsible);
