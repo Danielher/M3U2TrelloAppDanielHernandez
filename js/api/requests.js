@@ -1,5 +1,5 @@
 // Creación de varible para guarda la URL de la API Fake
-const API_URL = "https://my-json-server.typicode.com/https://github.com/Danielher/M3U2TrelloAppDanielHernandez";
+const API_URL = "https://my-json-server.typicode.com/Danielher/M3U2TrelloAppDanielHernandez";
 
 //Hacemos una petición get a la API Fake utlizando los templates strings
 axios
