@@ -304,7 +304,7 @@ h1{
       margin-left: 0px;
       margin-right: 0px;
       padding-left: 0px;
-      /* box-sizing: border-box; */
+      
       padding: 0 30px; }
   
     .form-image {
@@ -320,14 +320,7 @@ h1{
     .signup-form, .signup-image, .signin-form, .signin-image {
       width: auto; }
   
-    /*.social-login {
-      justify-content: center;
-      -moz-justify-content: center;
-      -webkit-justify-content: center;
-      -o-justify-content: center;
-      -ms-justify-content: center; }
-      */
-  
+ 
     .form-button {
       text-align: center; }
   
@@ -344,4 +337,47 @@ h1{
     .form-title {
       text-align: center; } }
 
-  
+  /*Card Task*/
+
+  .card-task {
+  height: 120px;
+  background-color: aliceblue;
+  padding: 5px;
+  margin: 10px;
+  box-shadow:rgba(32, 54, 177, 0.05);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-task:hover
+{
+  transform: scale(1.01);
+}
+
+.card-task__title 
+{
+  margin: 1px;
+  font-size:medium;
+  color: black;
+}
+
+.card_task__responsible,
+.card-task__date {
+  /*font-size:large;*/
+  color: rgba(17, 57, 165, 0.753);
+  margin: auto;
+}
+
+.card_task__responsible--tag-creator,
+.card-task__date--tag-date{
+  margin: auto;
+  font-size: var(--Azul);
+  color: var(--Azul);
+}
+
+.card_task__details{
+  margin-top: 5px;
+  padding: auto;
+}
