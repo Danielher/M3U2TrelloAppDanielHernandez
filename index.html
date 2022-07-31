@@ -72,8 +72,12 @@
                     <div class="form-group form-button">
                         <input type="submit" name="signup" id="signup" class="form-submit" value="Registrar Tarea"/>
                     </div>
-
-                    <a href="javascript:void(0);" onclick="ocultar();"><h4>Ocultar</h4></a>
+                    <div class="form-group form-button">
+                        <button class="form-submit">
+                        <a href="javascript:void(0);" onclick="ocultar();" ><h5>Cerrar Formulario</h5></a>
+                        </button>
+                    </div>
+                    
                 </form>
                 <div class="form-image">
                     <figure><img src="/img/signup-image.jpg" alt="sing up image"></figure>
@@ -84,10 +88,15 @@
     </main>
     <!-- Recursos externos -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="js/libraries/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/libraries/axios.js"></script>
+    <script src="js/libraries/draggable.js"></script>
+    <script src="/js/libraries/hammer.js"></script>
 
     <!-- Recursos internos -->
     <script src="index.js"></script>
     <script src="js/api/requests.js"></script>
+    <script src="js/helpers/dragandDrop.js"></script>
+    <script src="js/helpers/newTask.js"></script>
 </body>
 </html>
