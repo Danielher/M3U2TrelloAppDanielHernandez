@@ -1,7 +1,7 @@
 // Apuntamos al formulario para crear la nueva tarea del HTML
 const form = document.querySelector('#register-form');
 
-form.addEventListener('signup', (ev) => {
+form.addEventListener('submit', (ev) => {
   // Evitamos que la pagina se recargue cuando se envian los datos
   ev.preventDefault();
   const formData = ev.target;
@@ -9,7 +9,7 @@ form.addEventListener('signup', (ev) => {
   // Recopilamos la información a enviar a la API
   const data = {
     title: formData.titulo.value,
-    person: formData.Resonsable.value,
+    person: formData.Responsable.value,
     details: formData.Descripcion.value,
     // deadline: formData.deadLineTask.value,
     deadline: formData.FechaEn.value,
